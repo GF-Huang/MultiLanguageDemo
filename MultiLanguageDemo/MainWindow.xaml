@@ -1,0 +1,17 @@
+﻿<Window x:Class="MultiLanguageDemo.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:MultiLanguageDemo"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+  <StackPanel VerticalAlignment="Center">
+    <TextBlock Text="{local:Localization ExampleText}" FontSize="30" HorizontalAlignment="Center" VerticalAlignment="Center" />
+    <ComboBox SelectedIndex="0" HorizontalAlignment="Center" SelectionChanged="ComboBox_SelectionChanged">
+      <ComboBoxItem Content="---- Click to change language ----" />
+      <ComboBoxItem Content="English" Tag="en-US" />
+      <ComboBoxItem Content="中文" Tag="zh-CN" />
+    </ComboBox>
+  </StackPanel>
+</Window>
